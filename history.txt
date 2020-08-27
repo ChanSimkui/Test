@@ -1,0 +1,13 @@
+ 2086  cd ~
+ 2087  git clone git@github.com:ChanSimkui/Test.git
+ 2088  cd Test/
+ 2089  ls
+ 2090  git checkout -b update-readme
+ 2091  vim README.md 
+ 2092  git add README.md 
+ 2093  git commit -m "Update README.md."
+ 2094  git push origin update-readme 
+ 2095  git checkout master 
+ 2096  git merge update-readme 
+ 2097  git push origin master 
+ 2098  history 13 >> history.txt
